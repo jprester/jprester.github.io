@@ -11,12 +11,12 @@
 
         <!-- Title -->
         <title>Janko Prester, Front-End Developer - Web Site</title>
-
+        <link rel="stylesheet" href="styles/normalize.css" media="screen" />
         <!-- Styles -->
-        <link rel="stylesheet" href="style.css" media="screen" />
-
+        <link rel="stylesheet" href="styles/style.css" media="screen" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700" rel="stylesheet">
         <!-- Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900' rel='stylesheet' type='text/css'>
 
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -25,31 +25,106 @@
     </head>
     <body>
         <header>
-            <div class="container">
-                <h1 class="logo"><img src='./img/logo.png'/><span> Janko Prester </span></h1>
+            <div class="header">
+                <div class="content-container">
+                    <div class="header-container">
+                        <div class="logo-container">
+                            <h1 class="logo"><a href = "#"><img class="logo-img" src='./img/logo.png' alt="logo"/><span class="logo-text"> Janko Prester </span></h1>
+                        </div>
+                        <nav class="nav-container">
+                            <ul class="nav-item-container">
+                                <li class="nav-item"><a class="jariks-links" target="_blank" href="https://github.com/jprester">My git</a></li>
+                                <li class="nav-item"><a class="jariks-links" href="2018_2_CV_janko_prester.pdf">Download my CV</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </header>
 
         <section>
-            <div class="container centered">
-                <h2 class = "big-title">Hello</h2>
-                <p>My name is Janko Prester I work as Front-End/Web developer.</p>
-                <p>I am still in the proces of setting up my new website but you can check some basic information about my work and skills here.</p>
-                <!--user icon in two different styles-->
-                <p>Download my cv: </p>
-                <p><a href="2018_2_CV_janko_prester.pdf" alt="my cv"><i class="far fa-file-alt fa-2x"></i></a> </p>
-                <p>Check my github or social media profiles: </p>
-                <ul class = "link-list">
-                    <li><a href="https://github.com/jprester"><i class="fab fa-github fa-2x"></i></a></li>
-                    <li><a href = "https://hr-hr.facebook.com/janko.prester"><i class="fab fa-facebook-f fa-2x"></i></a></li>
-                    <li><a href = "https://www.linkedin.com/in/janko-prester-91b8222b"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
-                </ul>
+            <div class="intro">
+                <div class="content-container">
+                    <div class="intro-container">
+                        <div class="intro-hello">
+                            <h1 class="intro-hello-title">Hello</h1>
+                            <p class="intro-hello-text">My name is Janko Prester I work as Front-End/Web developer.</p>
+                        </div>
+                        <div class="intro-code-box">
+                            <div class="code-box">
+                                <p>//Details about me</p>
+                                <p>const name = 'Janko Prester'</p>
+                                <p>const job = 'front end developer'</p>
+                                <p>const skills = ['javascript', 'css', 'reactJS', 'UI design'];</p>
+                                <p>if (this.props.visitorIsInterested) {</p>
+                                <p class="intro-code-box-line">return getWebsiteInfo(name, work, skills);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-jariks-img-container">
+                        <img class="jariks-img" src="img/janko_prester_profile_pic.jpg" alt="Profile Picture">
+                    </div>
+                </div>
             </div>
         </section>
 
+        <section>
+            <div class="about-me padding">
+                <div class="content-container">
+                    <div class="about-me-container">
+                        <h1 class="title">About me</h1>
+                        <p class="text">This is the website where you can find information about my skills, experience and contacts. I have more than 5 years experience in design and development of websites and web apps using the most recent technologies. While my formal education resulted in Masters Degree in economics I decided that I am far more interested in tech field so I focused my career development in that area. If you need more detailed information about my work you can <a href="2018_2_CV_janko_prester.pdf"> download my cv</a> or get in touch with me with one of the links below. </p>
+
+                        <p class="text">Beside my work in IT I used to worked as a DJ and music producer for several years and I also enjoy blogging and travel in my free time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="my-work padding">
+                <div class="content-container">
+                    <h1 class="title">Some examples of my work</h1>
+                    <p class="text">Coming soon ... </p>
+                    <!-- <div class="my-work-img-container">
+                        <div class="my-work-img">
+                        </div>
+                        <div class="my-work-img">
+                        </div>
+                        <div class="my-work-img">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="contacts padding">
+                <div class="content-container">
+                    <h1 class="title">Contacts</h1>
+                    <div class="contacts-container">
+                        <div class="contacts-item">
+                            <a class="jariks-links" target="_blank" href="https://github.com/jprester"><i class="fab fa-github icon-margin"></i>Github</a>
+                        </div>
+                        <div class="contacts-item">
+                            <a class="jariks-links" href = "mailto:janko.prester@gmail.com"><i class="fas fa-at icon-margin"></i>janko.prester@gmail.com</a>
+                        </div>
+                        <div class="contacts-item">
+                            <a class="jariks-links" target="_blank" href = "https://www.linkedin.com/in/janko-prester-91b8222b"><i class="fab fa-linkedin-in icon-margin"></i>LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <footer>
-            <div class="container">
-                <p>or contact me on my e-mail: janko.prester@gmail.com</p>
+            <div class="footer">
+                <div class="content-container">
+                    <div class="footer-text">
+                        Design By <a href = "https://github.com/jprester"> Janko Prester </a> . Developed By <a href = "http://www.katerina-bezlepkina.com/">Katerina Bezlepkina </a> 2018
+                    </div>
+                </div>
             </div>
         </footer>
     </body>
