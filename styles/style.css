@@ -205,9 +205,9 @@ h1 a {
 }
 
 .my-work-img {
+  display: inline-block;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  position: relative;
   -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
@@ -251,6 +251,10 @@ h1 a {
   transition: height 0.5s;
   -webkit-transition: height 0.5s;
   -moz-transition: height 0.5s;
+}
+
+.description-text {
+  padding: 2px;
 }
 
 .my-work-img a:hover > div {
