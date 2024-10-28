@@ -1,22 +1,41 @@
 /* General Styles */
 
 body {
-  font-size: 16px; font-family: 'Lato', Arial, sans-serif;
+  font-size: 16px;
+  font-family: "Lato", Arial, sans-serif;
 }
 
 html {
   font-size: 62.5%;
 }
 
-ol, ul {list-style:none;}
+ol,
+ul {
+  list-style: none;
+}
 
-a, a:hover, a:focus, a:active {text-decoration: none; color: inherit; cursor: pointer;}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
 
-ul.link-list {margin: auto; width: 150px; height: 30px}
-.link-list li {float: left; margin-left: 15px}
+ul.link-list {
+  margin: auto;
+  width: 150px;
+  height: 30px;
+}
+.link-list li {
+  float: left;
+  margin-left: 15px;
+}
 
-
-.padding {padding: 2rem 0;}
+.padding {
+  padding: 2rem 0;
+}
 
 .content-container {
   max-width: 90%;
@@ -28,7 +47,7 @@ ul.link-list {margin: auto; width: 150px; height: 30px}
 }
 
 .jariks-links:hover {
-  color: #E66E66;
+  color: #e66e66;
   cursor: pointer;
 }
 /* header */
@@ -40,7 +59,7 @@ ul.link-list {margin: auto; width: 150px; height: 30px}
 h1.logo {
   font-weight: 300;
   font-size: 1.4rem;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
 h1 a {
@@ -96,7 +115,7 @@ h1 a {
 
 .intro {
   text-align: center;
-  background: #E66E66;
+  background: #e66e66;
   color: white;
   padding: 2rem 0rem;
 }
@@ -106,7 +125,6 @@ h1 a {
   justify-content: center;
   flex-wrap: wrap;
 }
-
 
 .intro-hello-title {
   font-weight: 300;
@@ -128,9 +146,9 @@ h1 a {
 }
 
 .intro-code-box {
-  -webkit-box-shadow: 0.02rem 0rem 0.2rem 0.1rem rgba(0, 0, 0, 0.15);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow: 0.02rem 0rem 0.2rem 0.1rem rgba(0, 0, 0, 0.15);  /* Firefox 3.5 - 3.6 */
-  box-shadow: 0.02rem 0rem 0.2rem 0.1rem rgba(0, 0, 0, 0.15);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  -webkit-box-shadow: 0.02rem 0rem 0.2rem 0.1rem rgba(0, 0, 0, 0.15); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0.02rem 0rem 0.2rem 0.1rem rgba(0, 0, 0, 0.15); /* Firefox 3.5 - 3.6 */
+  box-shadow: 0.02rem 0rem 0.2rem 0.1rem rgba(0, 0, 0, 0.15); /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
   border: 2px solid transparent;
   border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -139,11 +157,11 @@ h1 a {
 
 .code-box {
   background: rgb(0, 0, 0); /* The Fallback */
-  background: rgba(0, 0, 0, 0.15); 
+  background: rgba(0, 0, 0, 0.15);
   margin: 0.5rem;
   padding: 1rem;
   text-align: start;
-  font-family: 'Menlo', sans-serif;
+  font-family: "Menlo", sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
@@ -187,7 +205,7 @@ h1 a {
 }
 
 .text a:hover {
-  color: #E66E66;
+  color: #e66e66;
 }
 
 .title {
@@ -231,8 +249,8 @@ h1 a {
 }
 
 .mywork-image {
-  width: 276px;
-  height: 173px;
+  width: 320px;
+  height: 180px;
 }
 
 .mywork-item-description {
@@ -241,9 +259,9 @@ h1 a {
   bottom: 0px;
   margin: 0px;
   height: 65px;
-  width: 276px;
+  width: 320px;
   color: #ffffff;
-  background-color: #E66E66;
+  background-color: #e66e66;
   background: rgb(230, 110, 102); /* The Fallback */
   background: rgba(230, 110, 102, 0.8);
   padding-top: 10px;
@@ -259,7 +277,7 @@ h1 a {
 
 .my-work-img a:hover > div {
   height: 80px;
-} 
+}
 
 h5.item-title {
   width: 100%;
@@ -267,11 +285,11 @@ h5.item-title {
   font-weight: 500;
   margin-bottom: 10px;
   font-size: 1.4rem;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
-a.mywork-item:hover .item-description{
+a.mywork-item:hover .item-description {
   display: inline-block;
 }
 
@@ -315,7 +333,7 @@ a.mywork-item:hover .item-description{
 }
 
 .footer-text a:hover {
-  color: #E66E66;
+  color: #e66e66;
 }
 
 /* responsive styles */
@@ -329,7 +347,7 @@ a.mywork-item:hover .item-description{
   h1.logo {
     font-size: 1.5rem;
   }
-  
+
   .logo-img {
     width: 17px;
     height: 17px;
@@ -339,7 +357,7 @@ a.mywork-item:hover .item-description{
     margin-right: 1.4rem;
     font-size: 1.2rem;
   }
-  
+
   .intro-hello {
     width: 38rem;
   }
@@ -356,7 +374,7 @@ a.mywork-item:hover .item-description{
     width: 40rem;
   }
 
-  .contacts-container { 
+  .contacts-container {
     justify-content: space-around;
   }
 
@@ -373,7 +391,7 @@ a.mywork-item:hover .item-description{
   h1.logo {
     font-size: 2rem;
   }
-  
+
   .logo-img {
     width: 20px;
     height: 20px;
@@ -394,9 +412,9 @@ a.mywork-item:hover .item-description{
     font-weight: 300;
     color: #5c5c5c;
     font-size: 2.7rem;
-    color: #4A4A4A;
+    color: #4a4a4a;
   }
-  
+
   .logo-img {
     width: 2.6rem;
     height: 2.6rem;
