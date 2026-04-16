@@ -1,304 +1,147 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <!-- Meta -->
-    <meta name="title" content="Janko Prester Portfolio Site" />
-    <meta name="description" content="Janko Prester - CV and Portfolio" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Janko Prester</title>
     <meta
-      name="keywords"
-      content="Janko Prester, Janko, Prester, web development, front end developer, programming"
+      name="description"
+      content="Personal website of Janko Prester, software engineer in Stockholm working across complex web applications, 3D interfaces, and AI-assisted development."
     />
-    <meta name="author" content="Janko Prester" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-
-    <!-- Title -->
-    <title>Janko Prester, Front-End Developer - Web Site</title>
-    <link rel="stylesheet" href="styles/normalize.css" media="screen" />
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles/style.css" media="screen" />
-
-    <!-- Fonts -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
-    ></script>
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
-
   <body>
-    <header>
-      <div class="header">
-        <div class="content-container">
-          <div class="header-container">
-            <div class="logo-container">
-              <h1 class="logo">
-                <a href="https://show-me-coins.herokuapp.com/"
-                  ><img class="logo-img" src="./img/logo.png" alt="logo" />
-                  <span class="logo-text">Janko Prester</span>
-                </a>
-              </h1>
-            </div>
-            <nav class="nav-container">
-              <ul class="nav-item-container">
-                <li class="nav-item">
-                  <a
-                    class="jariks-links"
-                    target="_blank"
-                    href="https://github.com/jprester"
-                  >
-                    <i class="fab fa-github"></i>
-                    <span class="nav-link-text">My git</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="jariks-links" href="2026-janko_prester_cv.pdf" download>
-                    <i class="fas fa-cloud-download-alt"></i>
-                    <span class="nav-link-text">Download my CV</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+      <div class="site-panel">
+        <header class="site-header">
+          <a class="site-brand" href="/">
+            <span class="site-name">Janko Prester</span>
+            <span class="site-title">Software Engineer</span>
+          </a>
+          <nav class="site-nav" aria-label="Primary" data-site-nav data-open="false">
+            <button
+              class="menu-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="site-menu"
+              aria-label="Toggle navigation"
+              data-nav-toggle
+            >
+              <span class="menu-toggle-inner" aria-hidden="true">
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+              </span>
+            </button>
+            <ul class="site-nav-links" id="site-menu" data-nav-menu>
+              <li><a href="/work/">Work</a></li>
+              <li><a href="/projects/">Projects</a></li>
+              <li><a href="/art/">Art</a></li>
+              <li><a href="/writing/">Writing</a></li>
+            </ul>
+          </nav>
+        </header>
 
-    <section>
-      <div class="intro">
-        <div class="content-container">
-          <div class="intro-container">
-            <div class="intro-hello">
-              <h2 class="intro-hello-title">Hello</h2>
-              <p class="intro-hello-text">
-                My name is Janko Prester I work as Front-End/Web developer.
-              </p>
-            </div>
-            <div class="intro-code-box">
-              <div class="code-box">
-                <p>// Details about me</p>
-                <p>const name = 'Janko Prester'</p>
-                <p>const job = 'Front End Developer'</p>
-                <p>
-                  const skills = ['javascript', 'css', 'React.js', 'Vue.js', 'UI
-                  design'];
-                </p>
-                <p>if (this.props.visitorIsInterested) {</p>
-                <p class="intro-code-box-line">
-                  return getWebsiteInfo(name, job, skills);
-                </p>
-                <p>}</p>
+        <main class="page-content" id="main">
+          <section class="home-intro" aria-labelledby="home-intro-title">
+            <h1 class="visually-hidden" id="home-intro-title">Introduction</h1>
+            <p>
+              Frontend engineer based in Stockholm, working at the intersection of complex web applications,
+              3D interfaces, and AI-assisted development. Currently building the visualization layer at
+              Corsmed. Previously at Conjecture and Doktor.se. Contributing to open-source AI tooling since
+              2020.
+            </p>
+          </section>
+
+          <section class="home-streams" aria-label="Recent work streams">
+            <div>
+              <p class="section-label">Recent writing</p>
+              <div class="entry-list">
+                <a class="entry-card" href="/writing/">
+                  <div class="entry-title">Building the GPT-J frontend in 2021</div>
+                  <div class="entry-meta">April 2026</div>
+                </a>
+                <a class="entry-card" href="/writing/">
+                  <div class="entry-title">AI-assisted development workflows that actually work</div>
+                  <div class="entry-meta">March 2026</div>
+                </a>
+                <a class="entry-card" href="/writing/">
+                  <div class="entry-title">Liminal Drift and the problem of browser-based atmosphere</div>
+                  <div class="entry-meta">February 2026</div>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="intro-jariks-img-container">
-            <img
-              class="jariks-img"
-              src="img/janko_prester_profile_pic.jpg"
-              alt="Profile Picture"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section>
-      <div class="about-me padding">
-        <div class="content-container">
-          <div class="about-me-container">
-            <h2 class="title">About me</h2>
-            <p class="text">
-              This is the website where you can find information about my
-              skills, experience and contacts. I have more than 5 years
-              experience in design and development of websites and web apps
-              using the most recent technologies. While my formal education
-              resulted in Masters Degree in economics I decided that I am far
-              more interested in tech field so I focused my career development
-              in that area. If you need more detailed information about my work
-              you can
-              <a href="2023_02_CV_janko_prester.pdf"> download my cv</a> or get
-              in touch with me with one of the links below.
+            <div>
+              <p class="section-label">Recent projects</p>
+              <div class="entry-list">
+                <a class="entry-card" href="/projects/">
+                  <div class="entry-title">Latent Foundation</div>
+                  <div class="entry-meta">AI content pipeline · Next.js</div>
+                </a>
+                <a class="entry-card" href="/projects/">
+                  <div class="entry-title">DietCheck</div>
+                  <div class="entry-meta">Multimodal dietary assistant</div>
+                </a>
+                <a class="entry-card" href="/projects/">
+                  <div class="entry-title">OpenClaw</div>
+                  <div class="entry-meta">Self-hosted personal AI assistant</div>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="art-section" aria-labelledby="recent-art-title">
+            <p class="section-label" id="recent-art-title">Recent art</p>
+            <div class="art-grid">
+              <article>
+                <a class="art-thumb" href="/art/" aria-label="View art collection featuring Leningrad 2125"></a>
+                <div class="art-caption">
+                  <a class="art-title text-link" href="/art/">Leningrad 2125</a>
+                  <p class="art-meta">Blender · Soviet cyberpunk city study</p>
+                </div>
+              </article>
+              <article>
+                <a
+                  class="art-thumb art-thumb--signal"
+                  href="/art/"
+                  aria-label="View art collection featuring Signal Loss at Dawn"
+                ></a>
+                <div class="art-caption">
+                  <a class="art-title text-link" href="/art/">Signal Loss at Dawn</a>
+                  <p class="art-meta">Blender · Industrial landscape</p>
+                </div>
+              </article>
+            </div>
+            <p class="art-link-row">
+              <a class="text-link small-note" href="/art/">All art →</a>
             </p>
+          </section>
+        </main>
 
-            <p class="text">
-              Beside my work in IT I used to worked as a DJ and music producer
-              for several years and I also enjoy blogging and travel in my free
-              time.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="my-work padding">
-        <div class="content-container">
-          <h3 class="title">Some examples of my work</h3>
-          <div class="my-work-img-container">
-            <div class="my-work-img">
-              <a
-                href="https://speedychat.netlify.app/"
-                class="mywork-item"
-              >
-                <img
-                  src="img/speedy-ai-chat-example.png"
-                  class="mywork-image"
-                  alt="AI chatbot example image"
-                />
-                <div class="mywork-item-description">
-                  <h5 class="item-title">SpeedyChat AI App</h5>
-                  <p class="description-text">
-                    Free LLM Chat Client optimised for clean and fast usage
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="my-work-img">
-              <a
-                href="https://ai-progress-feed.netlify.app/"
-                class="mywork-item"
-              >
-                <img
-                  src="img/ai-feed_app_example.png"
-                  class="mywork-image"
-                  alt="news getter app example image"
-                />
-                <div class="mywork-item-description">
-                  <h5 class="item-title">AI Progress Feed</h5>
-                  <p class="description-text">
-                    News web app for getting AI research RSS feeds. Made with
-                    React/Redux and written in typescript
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="my-work-img">
-              <a href="https://kript-mind.netlify.app/" class="mywork-item">
-                <img
-                  src="img/crypto_chatbot_example.png"
-                  class="mywork-image"
-                  alt="kript mind example image"
-                />
-                <div class="mywork-item-description">
-                  <h5 class="item-title">Kript-mind</h5>
-                  <p class="description-text">
-                    Cryptocurrency chatbot made with ReactJS
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="my-work-img">
-              <a
-                href="https://crypto-calculator.netlify.app/"
-                class="mywork-item"
-              >
-                <img
-                  src="img/crypto_historic_example.jpg"
-                  class="mywork-image"
-                  alt="crypto guilt calculator example image"
-                />
-
-                <div class="mywork-item-description">
-                  <h5 class="item-title">Crypto Historic Calculator</h5>
-                  <p class="description-text">
-                    Web app for calculating historical Cryptocurrency prices.
-                    Made with React/Redux.
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="my-work-img">
-              <a href="http://www.peking.hr" class="mywork-item">
-                <img
-                  src="img/peking_example.jpg"
-                  class="mywork-image"
-                  alt="peking restaurant example image"
-                />
-                <div class="mywork-item-description">
-                  <h5 class="item-title">Peking Restaurant Website</h5>
-                  <p class="description-text">
-                    HTML5 web app for Chinese restaurant. Includes custom CMS
-                    with PHP backend.
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="my-work-img">
-              <a
-                href="http://www.jankoprester.com/jan-peters-music/"
-                class="mywork-item"
-              >
-                <img
-                  src="img/janpeters_example.jpg"
-                  class="mywork-image"
-                  alt="jan peters example image"
-                />
-                <div class="mywork-item-description">
-                  <h5 class="item-title">Jan Peters Website</h5>
-                  <p class="description-text">
-                    Responsive website for DJ Jan Peters
-                  </p>
-                </div>
-              </a>
+        <footer class="footer">
+          <div class="footer-inner">
+            <p class="small-note">Static v1. Designed for a later content-driven expansion without changing the URL structure.</p>
+            <div class="footer-links">
+              <a href="https://github.com/jprester">GitHub</a>
+              <a href="https://www.linkedin.com/in/jankoprester/">LinkedIn</a>
+              <a href="mailto:janko.prester@gmail.com">Email</a>
             </div>
           </div>
-        </div>
+        </footer>
       </div>
-    </section>
-
-    <section>
-      <div class="contacts padding">
-        <div class="content-container">
-          <h3 class="title">Contacts</h3>
-          <div class="contacts-container">
-            <div class="contacts-item">
-              <a
-                class="jariks-links"
-                target="_blank"
-                href="https://github.com/jprester"
-                ><i class="fab fa-github icon-margin"></i>Github</a
-              >
-            </div>
-            <div class="contacts-item">
-              <a class="jariks-links" href="mailto:janko.prester@gmail.com"
-                ><i class="fas fa-at icon-margin"></i>janko.prester@gmail.com</a
-              >
-            </div>
-            <div class="contacts-item">
-              <a
-                class="jariks-links"
-                target="_blank"
-                href="https://www.linkedin.com/in/janko-p-91b8222b"
-                ><i class="fab fa-linkedin-in icon-margin"></i>LinkedIn</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="footer">
-        <div class="content-container">
-          <div class="footer-text">
-            Design By
-            <a href="https://github.com/jprester"> Janko Prester </a> .
-            Developed By
-            <a href="http://www.katerina-bezlepkina.com/"
-              >Katerina Bezlepkina
-            </a>
-            2018
-          </div>
-        </div>
-      </div>
-    </footer>
+    </div>
+    <script src="scripts/site.js"></script>
   </body>
 </html>
