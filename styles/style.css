@@ -609,6 +609,11 @@ select {
   background: rgba(255, 255, 255, 0.02);
 }
 
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
 .list-card-title,
 .project-card-title {
   margin: 0;
@@ -637,7 +642,8 @@ select {
 }
 
 .project-links {
-  margin-top: 0.85rem;
+  margin-top: auto;
+  padding-top: 0.85rem;
 }
 
 .page-heading {
