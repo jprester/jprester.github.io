@@ -12,6 +12,9 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+# .DS_Store is a macOS file that stores custom attributes of a folder such as the position of icons or the choice of a background image. It is not needed in a repository and can be safely ignored.
+.DS_Store
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
