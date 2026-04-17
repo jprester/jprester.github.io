@@ -173,10 +173,41 @@ select {
   transition: color 160ms ease;
 }
 
+.site-nav-link--github a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.28rem 0.62rem;
+  border: var(--border-hairline) solid rgba(178, 170, 155, 0.38);
+  border-radius: 999px;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.site-nav-link--github .nav-icon {
+  width: 0.84rem;
+  height: 0.84rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-nav-link--github .nav-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .site-nav-links a:hover,
 .site-nav-links a:focus-visible,
 .site-nav-links a[aria-current="page"] {
   color: var(--text-primary);
+}
+
+.site-nav-link--github a:hover,
+.site-nav-link--github a:focus-visible {
+  border-color: rgba(216, 203, 181, 0.58);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .page-content {
@@ -836,6 +867,12 @@ select {
   .site-nav-links a {
     display: block;
     padding: 0.65rem 0;
+  }
+
+  .site-nav-link--github a {
+    display: inline-flex;
+    padding: 0.44rem 0.6rem;
+    margin-top: 0.2rem;
   }
 
   .page-content {
