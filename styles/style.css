@@ -224,6 +224,10 @@ select {
   max-width: none;
 }
 
+.work-page-intro {
+  max-width: none;
+}
+
 .home-intro-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
@@ -233,6 +237,10 @@ select {
 
 .home-intro-copy {
   max-width: 37rem;
+}
+
+.work-intro-copy {
+  max-width: 46rem;
 }
 
 .intro-scene {
@@ -586,6 +594,28 @@ select {
   transform: translateY(-0.5px);
 }
 
+.pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.28rem 0.62rem;
+  border: var(--border-hairline) solid rgba(178, 170, 155, 0.38);
+  border-radius: 999px;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.pill-link:hover,
+.pill-link:focus-visible {
+  color: var(--text-primary);
+  border-color: rgba(216, 203, 181, 0.58);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.work-cv-link-row {
+  margin: 2rem 0;
+}
+
 .art-link-row {
   margin-top: 1.25rem;
 }
@@ -607,6 +637,16 @@ select {
   padding: 1.1rem 1.15rem 1rem;
   border: var(--border-hairline) solid var(--panel-border);
   background: rgba(255, 255, 255, 0.02);
+}
+
+.work-cv-card {
+  width: min(100%, 26rem);
+  margin: 1.1rem 0 1.35rem;
+}
+
+.work-cv-card .project-links {
+  margin-top: 0.85rem;
+  padding-top: 0;
 }
 
 .project-card {
