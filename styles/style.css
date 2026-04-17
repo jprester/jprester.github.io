@@ -820,9 +820,17 @@ select {
   }
 
   .site-nav-link--github a {
-    display: inline-flex;
-    padding: 0.44rem 0.6rem;
-    margin-top: 0.2rem;
+    display: block;
+    padding: 0.65rem 0;
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: var(--text-muted);
+  }
+
+  .site-nav-link--github .nav-icon {
+    display: none;
   }
 
   .page-content {
