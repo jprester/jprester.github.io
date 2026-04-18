@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sips --version)",
+      "Bash(sips --help)",
+      "Bash(sips *)",
+      "Bash(gh pr *)"
+    ]
+  }
+}
