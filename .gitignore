@@ -289,3 +289,6 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+# claude settings
+.claude/settings.local.json
