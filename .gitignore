@@ -290,5 +290,5 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 
-# claude settingss
+# claude settings
 .claude/settings.local.json
